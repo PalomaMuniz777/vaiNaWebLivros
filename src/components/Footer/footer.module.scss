@@ -1,0 +1,61 @@
+
+footer{
+    //border: solid 2px red;
+    height: 30vh;
+
+}
+
+.boxSocial{
+    background-color:#005695 ;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    nav{
+       // border: solid 2px yellow;
+        width: 16vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+}
+
+.boxEnd{
+    background-color: #232020;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //text-aling: center; poderia se estilizado aqui tambem ao invez da p no @media
+}
+
+@media(max-width: 1050px){
+    .boxSocial{
+        nav{
+           // border: solid 2px red;
+            width: 220px;
+
+        }
+    }
+}
+
+@media(max-width: 479px){
+    .boxSocial{
+        flex-direction: column; //para deixar em coluna
+        justify-content: space-evenly;
+        }
+
+    .boxEnd{
+            p{
+                text-align: center;
+            }
+        }
+}
+
+
+

@@ -1,0 +1,138 @@
+
+//sem class tem que botar aqui dentro ex section 
+header{
+   // border: solid 2px red;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+}
+
+.boxLogo{
+//border: solid 2px yellow;
+width: 23vw;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+h1{
+    color: white;
+    font-size:  25px;
+}
+}
+.boxMenu{
+//border: solid 2px greenyellow;
+width: 35vw;
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{color: white;
+        // font-size: 20px;
+    }
+}
+}
+.boxInput{
+     border: solid 2px white;
+    width: 17vw;
+    margin-right: 20px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 18px;
+    input{
+    outline: none;  // sem linha 
+    background-color: transparent;  //sem fundo
+    border: none;  //sem borda
+    color: white;  // cor do texto de fundo
+    font-size: 15px; //aumentar o tamanho da fonte
+    padding-left: 6px; // espaçamento das palavras dentro do input
+    width: 12vw;
+ 
+    &::placeholder{color: white}  //o texto deigittado fica branco
+    }
+
+}
+
+
+//---------------------------------------- className----------------------------------
+//estilização por class
+// .boxLogo{
+//     background-color: rgb(5, 232, 50);
+//     h1{ background-color: rgb(39, 5, 232);
+//         color: red;
+//     }
+// ul{ background-color: gray;}
+// }
+
+@media(max-width: 1170px){
+
+        .boxLogo{
+            //border: solid 2px red;
+            width: 100%;
+            justify-content: space-evenly;
+            h1{
+                font-size: 28px;
+            }
+            img{
+                width: 50px;
+            }
+        }
+    .boxInput{
+        height: 3vh; //teste
+        input{
+            &::placeholder{   //diminuir o texto dentro do input
+                font-size: 1vw;
+               
+
+            }
+        }
+    }
+
+    .boxMenu{
+        //border: solid 2px yellow;
+        ul{
+            font-size: 1.6vw;
+
+        }
+
+    }
+
+}
+
+@media(max-width: 780px){
+    header{
+        flex-direction: column;
+        height: 25vh;
+        justify-content: space-between;
+
+    }
+
+    .boxInput{
+        display: none;   //para o input nao aparecer na medida de 780px ou menor
+
+    }
+    .boxlogo{
+        width: 80%;
+        h1{
+            font-size: 25px;
+        }
+        img{
+            width: 70px;
+        }
+
+    }
+
+    .boxMenu{
+        width: 100%;
+        ul{
+            justify-content: space-evenly;
+            font-size: 22px;
+            
+        }
+    }
+}
+
+

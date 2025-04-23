@@ -1,0 +1,163 @@
+
+.post{
+    background-image: url("../../assets/img/banner.png");
+    background-repeat: no-repeat; //para a imagem nao ficar repetindo
+    background-size: cover; // contain ajusta a imagem para nao cortar como o cover ajusta com o centro da foto no centro do espaço podendo cortar as bordas 
+    background-position: center;
+    height:85vh; // mudar a altura
+    display: flex;
+    align-items: center;
+
+    h2{
+        color: white;
+       // border: solid 2px red;
+        width: 27vw; //largura da caixa
+        font-size: 40px; //tamanho da fonte
+        margin-left: 150px; 
+
+
+    }
+
+}
+
+.devoDoar{
+    //border: solid 2px green;
+    height: 80vh; //nao precisa de largura por padrao a caixa ja vem com limite
+
+    div{
+        //border: solid red;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            color: blue;
+            margin-left: 60px;
+        }
+        
+    }
+
+}
+
+.boxCard{
+//border: solid 2px rgb(5, 248, 232);
+display: flex;
+width: 85vw;
+height: 60vh;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 10px;
+article{
+   // border: solid 2px blue;
+    width: 20%;
+    height: 200px;    // height: 80%;
+    background-color:#0157944D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+
+     p{
+        text-align: center;
+        font-size: 1.2vw;
+
+        }
+    }
+
+}
+
+@media(max-width: 780px){
+    .post{
+        justify-content: center;
+        h2{
+           // border: solid 2px red;
+            width: 88%;
+            margin-left: 0; //zerar o paddin colocado no h2
+            text-align: center;//centralizar o texto
+
+        }
+    }
+
+}
+
+@media(max-width: 1000px){
+    .boxCard{
+    article{
+        p{
+            font-size: 1.8vw;
+        }
+    }
+ }
+}
+
+@media(max-width: 780px){
+.devoDoar{
+    //border: solid 2px green;
+    height: 120vh;
+
+    div{
+       // border: solid 2px red;
+        justify-content: center;
+         h2{
+            margin-left: 0;
+            }
+        }
+    }
+
+.boxCard{
+   // border: solid 2px yellow;
+    height: auto;
+    flex-wrap: wrap; //propriedade do flex box para organizar os itens por espaço
+    gap: 20px;
+
+    article{
+        width: 230px;
+        height: 38vh;
+        p{
+            font-size: 14px;
+        }
+
+           }
+    }
+}
+@media(max-width: 487px){
+    .devoDoar{
+        height: 190vh;
+    }
+}
+
+@media(max-width: 900px){
+  .boxCards{
+        height: 80vh;
+    }
+    .boxDoados{
+        height: 90vh;
+    }
+}
+
+
+
+
+// @media(max-width: 1100px){
+// .boxCard{
+//     article{
+//         width: 16vw;
+//         h3{
+//             font-size: 17px;
+//         }
+//         p{
+//             font-size: 14px;
+//         }
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+

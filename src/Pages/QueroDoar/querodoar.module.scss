@@ -1,0 +1,185 @@
+ 
+.principal{
+   // border: solid 2px rgb(0, 255, 81);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+   // border: solid 2px yellow;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+   h2{
+    //border: solid 2px red;
+    text-align: center;
+   }
+
+    form{
+        border: solid 2px #005695;
+        width: 25vw; // mexi aqui
+        height: 60vh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        div{
+            //border: solid 2px purple;
+            color: #005695;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        input{
+            border: solid 2px #005695;
+            width: 80%;
+            height: 5vh;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 20px;
+            &::placeholder{
+                color: black;
+            
+            }
+
+        }
+        .doar{
+            background-color: #005695 ;
+            width: 10vw;
+            height: 6vh;
+            padding-left: 0;
+            color: white;
+            font-size: 18px;
+
+        }   
+    }
+}
+
+@media(max-width: 1280px){
+ .principal{
+   // border: solid 2px red;
+ }
+ .container{
+   // border: solid 2px gray;
+    form{
+        width: 325px;
+        input{
+            width: 280px;
+           }
+           .doar{
+            width: 130px;
+
+           }
+    }
+ }
+}
+
+@media(max-width: 930px){
+    .container{
+        h2{
+           // border: solid 2px yellow;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+@media(max-width:400px){
+    .container{
+        h2{
+            font-size: 15px;
+        }
+       // border: solid 2px gray;
+        form{
+
+            div{
+                h3{
+                    font-size: 5vw;
+                }
+                img{
+                    width: 16vw;
+                }
+            }
+            width: 80vw;
+            input{
+                width: 80%;
+               }
+               .doar{
+                width: 32vw;
+    
+               }
+        }
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // input:nth-child(6){
+// //     background-color: #005695 ;
+// //     width: 10vw;
+// //     height: 6vh;
+// //     padding-left: 0;
+// //     color: white;
+// //     font-size: 18px;
+
+// // }   outro exemplo
+
+// @media(max-width: 1170px){
+
+//     form{
+//         width: 400px;
+//     }
+
+// }
+// @media(max-width: 650px){
+//     .container{
+//         h2{
+//             font-size: 20px;
+//         }
+//     }
+
+// }
+
+// @media(max-width: 450px){
+
+//     form{
+//         width: 75vw;
+//         div{
+//             img{
+//                 width: 13vw;
+//             }
+//             h3{
+//                 font-size: 4.5vw;
+//             }
+//         }
+//     }
+
+// }
+
+
+
+
+
+
+ 
